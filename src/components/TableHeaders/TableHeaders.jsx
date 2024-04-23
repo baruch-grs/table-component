@@ -1,13 +1,14 @@
 import React from "react";
 
-const TableHeaders = ({ tableHeaders }) => {
+const TableHeaders = ({ headers }) => {
+  console.log(headers);
   return (
     <>
       <thead>
         <tr>
-          {tableHeaders.map((header) => (
+          {/* {tableHeaders.map((header) => (
             <th>{header}</th>
-          ))}
+          ))} */}
         </tr>
       </thead>
     </>
