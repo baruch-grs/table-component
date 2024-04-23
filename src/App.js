@@ -1,13 +1,11 @@
 import "./App.css";
-import TableHeaders from "./components/TableHeaders/TableHeaders";
-import * as DataTable from "./utils/DataTable";
+import Table from "./components/Table/Table";
+import DataTable from "./utils/DataTable.json";
 
 function App() {
   return (
     <div className="App">
-      <table>
-        <TableHeaders {...DataTable}></TableHeaders>
-      </table>
+      <Table dataTable={DataTable}></Table>
     </div>
   );
 }
