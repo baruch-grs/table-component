@@ -1,1 +1,8 @@
+.headers-container {
+  background-color: #000;
+  text-transform: capitalize;
+}
 
+.headers-container tr th {
+  color: white;
+}

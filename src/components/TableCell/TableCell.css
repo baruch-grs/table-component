@@ -2,6 +2,14 @@
   text-align: center;
 }
 
-.table-body-container tr td:nth-child(odd) {
+.table-body-container tr:nth-child(odd) {
   background-color: #f2f2f2;
+}
+.table-body-container tr:nth-child(even) {
+  background-color: #84a98c;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }

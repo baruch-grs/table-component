@@ -4,7 +4,7 @@ import "./TableHeaders.css";
 const TableHeaders = ({ tableHeaders }) => {
   return (
     <>
-      <thead className="">
+      <thead className="headers-container">
         <tr>
           {tableHeaders.map((header, index) => (
             <th key={index}>{header}</th>
