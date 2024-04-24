@@ -3,21 +3,22 @@ import { useEffect, useState } from "react";
 
 import TableCell from "../TableCell/TableCell";
 import TableHeaders from "../TableHeaders/TableHeaders";
-
+import "./Table.css";
 const Table = ({ dataTable }) => {
+  let { tableHeaders, bodyData } = dataTable;
   const [headers, setHeaders] = useState([]);
-  const [bodyData, setBodyData] = useState([]);
+  const [cellData, setcellData] = useState([]);
 
   useEffect(() => {
-    setHeaders(dataTable.tableHeaders);
-    setBodyData(dataTable.bodyData);
-  }, [dataTable.tableHeaders, dataTable.bodyData]);
+    setHeaders(tableHeaders);
+    setcellData(bodyData);
+  }, [tableHeaders, bodyData]);
 
   return (
     <>
-      <table>
+      <table className="table-main">
         <TableHeaders tableHeaders={headers}></TableHeaders>
-        <TableCell bodyData={bodyData}></TableCell>
+        <TableCell bodyData={cellData}></TableCell>
       </table>
     </>
   );

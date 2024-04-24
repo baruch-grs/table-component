@@ -1,9 +1,10 @@
 import React from "react";
+import "./TableHeaders.css";
 
 const TableHeaders = ({ tableHeaders }) => {
   return (
     <>
-      <thead>
+      <thead className="">
         <tr>
           {tableHeaders.map((header, index) => (
             <th key={index}>{header}</th>

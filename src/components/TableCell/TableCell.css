@@ -1,0 +1,7 @@
+.table-body-container {
+  text-align: center;
+}
+
+.table-body-container tr td:nth-child(odd) {
+  background-color: #f2f2f2;
+}
