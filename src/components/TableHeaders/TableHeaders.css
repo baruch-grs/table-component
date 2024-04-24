@@ -1,8 +1,14 @@
 .headers-container {
-  background-color: #000;
   text-transform: capitalize;
 }
+.header-row th:first-child {
+  border-top-left-radius: 20px;
+}
 
+.header-row th:last-child {
+  border-top-right-radius: 20px;
+}
 .headers-container tr th {
   color: white;
+  background-color: #000;
 }
