@@ -1,5 +1,5 @@
 .table-body-container {
-  text-align: center;
+  display: grid;
 }
 
 .table-body-container tr:nth-child(odd) td {
@@ -20,4 +20,9 @@
 tr {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+td {
+  padding-left: 0.5rem;
 }
