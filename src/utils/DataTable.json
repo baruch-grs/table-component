@@ -1,5 +1,22 @@
 {
-  "tableHeaders": ["id", "name", "age", "email"],
+  "tableHeaders": [
+    {
+      "label": "id",
+      "mappingID": "id"
+    },
+    {
+      "label": "Name",
+      "mappingID": "name"
+    },
+    {
+      "label": "Age",
+      "mappingID": "age"
+    },
+    {
+      "label": "Email",
+      "mappingID": "email"
+    }
+  ],
   "bodyData": [
     { "id": 123456, "name": "Juan", "age": 25, "email": "juan@example.com" },
     { "id": 987654, "name": "María", "age": 30, "email": "maria@example.com" },

@@ -14,6 +14,12 @@ const Table = ({ dataTable }) => {
     setcellData(bodyData);
   }, [tableHeaders, bodyData]);
 
+  bodyData.forEach((item) => {
+    tableHeaders.forEach((header) => {
+      console.log(header.label + ": " + item[header.mappingID]);
+    });
+  });
+
   return (
     <>
       <table className="table-main">
@@ -22,14 +28,14 @@ const Table = ({ dataTable }) => {
       </table>
 
       <div className="table-mobile">
-        {headers.map((header, index) => (
+        {/* {headers.map((header, index) => (
           <table key={index} className="custom-mobile-table">
             <TableHeaders tableHeaders={[header]}></TableHeaders>
             <TableCell
               bodyData={cellData.map((item) => item[header])}
             ></TableCell>
           </table>
-        ))}
+        ))} */}
       </div>
     </>
   );
