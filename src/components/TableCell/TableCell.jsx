@@ -1,17 +1,31 @@
 import React from "react";
 import "./TableCell.css";
 
+const typeValidator = (arg) => {
+  return typeof arg === "object";
+};
+
 const TableCell = ({ bodyData }) => {
   return (
     <>
       <tbody className="table-body-container">
-        {bodyData.map((item) => (
-          <tr key={item.id} className="table-cell">
-            {Object.values(item).map((cell, index) => (
-              <td key={index}>{cell}</td>
-            ))}
-          </tr>
-        ))}
+        {bodyData.map((item) => {
+          if (typeValidator(item)) {
+            return (
+              <tr key={item.id} className="table-cell">
+                {Object.values(item).map((cell, index) => (
+                  <td key={index}>{cell}</td>
+                ))}
+              </tr>
+            );
+          } else {
+            return (
+              <tr key={item.id}>
+                <td>{item}</td>
+              </tr>
+            );
+          }
+        })}
       </tbody>
     </>
   );

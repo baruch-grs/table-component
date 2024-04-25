@@ -1,15 +1,20 @@
 {
   "tableHeaders": ["id", "name", "age", "email"],
   "bodyData": [
-    { "id": "001", "name": "Juan", "age": 25, "email": "juan@example.com" },
-    { "id": "002", "name": "María", "age": 30, "email": "maria@example.com" },
-    { "id": "003", "name": "Luis", "age": 28, "email": "luis@example.com" },
-    { "id": "004", "name": "Ana", "age": 35, "email": "ana@example.com" },
-    { "id": "005", "name": "Pedro", "age": 40, "email": "pedro@example.com" },
-    { "id": "006", "name": "Laura", "age": 27, "email": "laura@example.com" },
-    { "id": "007", "name": "Carlos", "age": 32, "email": "carlos@example.com" },
-    { "id": "008", "name": "Sofía", "age": 29, "email": "sofia@example.com" },
-    { "id": "009", "name": "Diego", "age": 33, "email": "diego@example.com" },
-    { "id": "010", "name": "Elena", "age": 31, "email": "elena@example.com" }
+    { "id": 123456, "name": "Juan", "age": 25, "email": "juan@example.com" },
+    { "id": 987654, "name": "María", "age": 30, "email": "maria@example.com" },
+    { "id": 456789, "name": "Luis", "age": 28, "email": "luis@example.com" },
+    { "id": 654321, "name": "Ana", "age": 35, "email": "ana@example.com" },
+    { "id": 234567, "name": "Pedro", "age": 40, "email": "pedro@example.com" },
+    { "id": 876543, "name": "Laura", "age": 27, "email": "laura@example.com" },
+    {
+      "id": 345678,
+      "name": "Carlos",
+      "age": 32,
+      "email": "carlos@example.com"
+    },
+    { "id": 765432, "name": "Sofía", "age": 29, "email": "sofia@example.com" },
+    { "id": 543210, "name": "Diego", "age": 33, "email": "diego@example.com" },
+    { "id": 987123, "name": "Elena", "age": 31, "email": "elena@example.com" }
   ]
 }

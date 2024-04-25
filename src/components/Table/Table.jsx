@@ -23,7 +23,7 @@ const Table = ({ dataTable }) => {
 
       <div className="table-mobile">
         {headers.map((header, index) => (
-          <table key={index}>
+          <table key={index} className="custom-mobile-table">
             <TableHeaders tableHeaders={[header]}></TableHeaders>
             <TableCell
               bodyData={cellData.map((item) => item[header])}

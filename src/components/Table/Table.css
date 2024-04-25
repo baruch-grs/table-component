@@ -10,8 +10,23 @@
   text-align: center;
 }
 
-@media (max-width: 480px) {
+@media (width > 651px) {
+  .table-mobile {
+    display: none;
+  }
+}
+
+@media (width <= 651px) {
   .table-main {
     display: none;
+  }
+  .table-mobile {
+    display: grid;
+  }
+  .headers-mobile-row {
+    display: grid;
+  }
+  .custom-mobile-table {
+    padding-bottom: 0.5rem;
   }
 }
