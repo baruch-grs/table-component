@@ -20,6 +20,17 @@ const Table = ({ dataTable }) => {
         <TableHeaders tableHeaders={headers}></TableHeaders>
         <TableCell bodyData={cellData}></TableCell>
       </table>
+
+      <div className="table-mobile">
+        {headers.map((header, index) => (
+          <table key={index}>
+            <TableHeaders tableHeaders={[header]}></TableHeaders>
+            <TableCell
+              bodyData={cellData.map((item) => item[header])}
+            ></TableCell>
+          </table>
+        ))}
+      </div>
     </>
   );
 };

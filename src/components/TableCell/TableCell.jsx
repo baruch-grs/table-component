@@ -7,10 +7,9 @@ const TableCell = ({ bodyData }) => {
       <tbody className="table-body-container">
         {bodyData.map((item) => (
           <tr key={item.id} className="table-cell">
-            <td>{item.id}</td>
-            <td>{item.name}</td>
-            <td>{item.age}</td>
-            <td>{item.email}</td>
+            {Object.values(item).map((cell, index) => (
+              <td key={index}>{cell}</td>
+            ))}
           </tr>
         ))}
       </tbody>
