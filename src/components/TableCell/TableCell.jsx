@@ -1,9 +1,6 @@
 import React from "react";
 import "./TableCell.css";
-
-const typeValidator = (arg) => {
-  return typeof arg === "object";
-};
+import { typeValidator } from "../../utils/CommonFunctions";
 
 const TableCell = ({ bodyData }) => {
   return (

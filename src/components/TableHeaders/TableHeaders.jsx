@@ -2,9 +2,6 @@ import React from "react";
 import "./TableHeaders.css";
 
 const TableHeaders = ({ tableHeaders }) => {
-  console.log("====================================");
-  console.log(tableHeaders);
-  console.log("====================================");
   return (
     <>
       <thead className="headers-container">
