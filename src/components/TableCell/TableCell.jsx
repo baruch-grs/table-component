@@ -2,7 +2,7 @@ import React from "react";
 import "./TableCell.css";
 import { typeValidator } from "../../utils/CommonFunctions";
 
-const TableCell = ({ bodyData }) => {
+const TableCell = ({ bodyData, headers }) => {
   return (
     <>
       <tbody className="table-body-container">
@@ -11,7 +11,7 @@ const TableCell = ({ bodyData }) => {
             return (
               <tr key={item.id} className="table-cell">
                 {Object.values(item).map((cell, index) => (
-                  <td key={index}>{cell}</td>
+                  <td key={index}>{item[headers[index].mappingID]}</td>
                 ))}
               </tr>
             );

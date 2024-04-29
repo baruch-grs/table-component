@@ -24,7 +24,7 @@ const Table = ({ dataTable }) => {
     <>
       <table className="table-main">
         <TableHeaders tableHeaders={headers}></TableHeaders>
-        <TableCell bodyData={cellData}></TableCell>
+        <TableCell bodyData={cellData} headers={headers}></TableCell>
       </table>
 
       <div className="table-mobile">
