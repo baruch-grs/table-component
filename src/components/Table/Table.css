@@ -1,6 +1,32 @@
 .table-main {
   width: 100%;
+  display: grid;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   border-spacing: 0;
+}
+
+.table-cell {
+  text-align: center;
+}
+
+@media (width > 651px) {
+  .table-mobile {
+    display: none;
+  }
+}
+
+@media (width <= 651px) {
+  .table-main {
+    display: none;
+  }
+  .table-mobile {
+    display: grid;
+  }
+  .headers-mobile-row {
+    display: grid;
+  }
+  .custom-mobile-table {
+    padding-bottom: 0.5rem;
+  }
 }

@@ -14,12 +14,29 @@ const Table = ({ dataTable }) => {
     setcellData(bodyData);
   }, [tableHeaders, bodyData]);
 
+  // bodyData.forEach((item) => {
+  //   tableHeaders.forEach((header) => {
+  //     console.log(header.label + ": " + item[header.mappingID]);
+  //   });
+  // });
+
   return (
     <>
       <table className="table-main">
         <TableHeaders tableHeaders={headers}></TableHeaders>
-        <TableCell bodyData={cellData}></TableCell>
+        <TableCell bodyData={cellData} headers={headers}></TableCell>
       </table>
+
+      <div className="table-mobile">
+        {headers.map((header, index) => (
+          <table key={index} className="custom-mobile-table">
+            <TableHeaders tableHeaders={[header]}></TableHeaders>
+            <TableCell
+              bodyData={cellData.map((item) => item[header.mappingID])}
+            ></TableCell>
+          </table>
+        ))}
+      </div>
     </>
   );
 };

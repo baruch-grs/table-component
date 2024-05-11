@@ -1,9 +1,10 @@
 .table-body-container {
+  /* display: grid; */
   text-align: center;
 }
 
 .table-body-container tr:nth-child(odd) td {
-  background-color: rgba(255, 255, 255, 0.719);
+  background-color: rgba(255, 255, 255, 0.909);
 }
 .table-body-container tr:nth-child(even) td {
   background-color: rgba(135, 187, 37, 30%);
@@ -17,7 +18,7 @@
   border-bottom-right-radius: 20px;
 }
 
-tr {
+.table-body-container .table-cell {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }

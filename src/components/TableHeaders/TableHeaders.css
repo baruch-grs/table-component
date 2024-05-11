@@ -1,6 +1,12 @@
 .headers-container {
   text-transform: capitalize;
 }
+
+.header-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .header-row th:first-child {
   border-top-left-radius: 20px;
 }
@@ -11,4 +17,11 @@
 .headers-container tr th {
   color: white;
   background-color: #000;
+}
+
+@media (max-width: 651px) {
+  .headers-mobile-row {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
